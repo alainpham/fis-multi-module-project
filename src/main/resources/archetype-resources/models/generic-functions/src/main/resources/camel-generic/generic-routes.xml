@@ -1,0 +1,10 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<routes id="generic-routes" xmlns="http://camel.apache.org/schema/spring">
+    <route id="_route1">
+        <from id="_from1" uri="timer:test:period=1000"/>
+        <log message="common route"/>
+    </route>
+</routes>
