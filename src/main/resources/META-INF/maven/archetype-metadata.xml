@@ -9,23 +9,9 @@
         <include>.gitignore</include>
       </includes>
     </fileSet>
-  </fileSets>
+</fileSets>
   <modules>
     <module id="models" dir="models" name="models">
-      <fileSets>
-        <fileSet encoding="UTF-8">
-          <directory>.settings</directory>
-          <includes>
-            <include>**/*.prefs</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory></directory>
-          <includes>
-            <include>.project</include>
-          </includes>
-        </fileSet>
-      </fileSets>
       <modules>
         <module id="generic-model" dir="generic-model" name="generic-model">
           <fileSets>
