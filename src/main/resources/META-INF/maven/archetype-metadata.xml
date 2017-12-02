@@ -4,18 +4,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <fileSets>
     <fileSet encoding="UTF-8">
-      <directory>.settings</directory>
-      <includes>
-        <include>**/*.prefs</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory></directory>
-      <includes>
-        <include>.project</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
         <include>.gitignore</include>
@@ -41,17 +29,22 @@
       <modules>
         <module id="generic-model" dir="generic-model" name="generic-model">
           <fileSets>
-            <fileSet encoding="UTF-8">
-              <directory>.settings</directory>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
               <includes>
-                <include>**/*.prefs</include>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.MF</include>
               </includes>
             </fileSet>
             <fileSet filtered="true" encoding="UTF-8">
-              <directory></directory>
+              <directory>src/main/resources</directory>
               <includes>
-                <include>.classpath</include>
-                <include>.project</include>
+                <include>**/*.xml</include>
               </includes>
             </fileSet>
           </fileSets>
@@ -76,38 +69,11 @@
                 <include>**/*.xml</include>
               </includes>
             </fileSet>
-            <fileSet encoding="UTF-8">
-              <directory>.settings</directory>
-              <includes>
-                <include>**/*.prefs</include>
-              </includes>
-            </fileSet>
-            <fileSet filtered="true" encoding="UTF-8">
-              <directory></directory>
-              <includes>
-                <include>.classpath</include>
-                <include>.project</include>
-              </includes>
-            </fileSet>
           </fileSets>
         </module>
       </modules>
     </module>
     <module id="services" dir="services" name="services">
-      <fileSets>
-        <fileSet encoding="UTF-8">
-          <directory>.settings</directory>
-          <includes>
-            <include>**/*.prefs</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory></directory>
-          <includes>
-            <include>.project</include>
-          </includes>
-        </fileSet>
-      </fileSets>
       <modules>
         <module id="dummy" dir="dummy" name="dummy">
           <fileSets>
@@ -140,26 +106,6 @@
               <directory>src/test/java</directory>
               <includes>
                 <include>**/*.java</include>
-              </includes>
-            </fileSet>
-            <fileSet filtered="true" encoding="UTF-8">
-              <directory>.settings</directory>
-              <includes>
-                <include>**/*.xml</include>
-              </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-              <directory>.settings</directory>
-              <includes>
-                <include>**/*.component</include>
-                <include>**/*.prefs</include>
-              </includes>
-            </fileSet>
-            <fileSet filtered="true" encoding="UTF-8">
-              <directory></directory>
-              <includes>
-                <include>.classpath</include>
-                <include>.project</include>
               </includes>
             </fileSet>
           </fileSets>
